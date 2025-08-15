@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO básico -->
+  <title>Restaurante Modelo • Cardápio e Pedidos</title>
+  <meta name="description" content="Cardápio online bonito e fácil, com pedidos via WhatsApp." />
+  <meta name="theme-color" content="#6e2320" />
+
+  <!-- Perf: fontes com preconnect + swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS base + tema do cliente -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+  <!-- Acessibilidade: pular direto ao conteúdo -->
+  <style>
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:8px;z-index:9999;}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__wrap">
+      <a href="#" class="logo" aria-label="Página inicial">
+        <img
+          id="logo-img"
+          src="assets/img/logo.jpg"
+          alt="Logo do restaurante"
+          width="160"
+          height="36"
+          loading="eager"
+          fetchpriority="high"
+          referrerpolicy="no-referrer"
+          onerror="this.style.display='none'"
+        >
+        <span class="logo-fallback" aria-hidden="true">Seu Restaurante</span>
+      </a>
+
+      <nav id="nav" class="nav" aria-label="Primária">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn--small" data-whats-link href="#" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+      </nav>
+
+      <button class="menu" id="menu-toggle" aria-controls="nav" aria-expanded="false" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="conteudo">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <h1><span class="accent">Comida incrível</span>, do seu jeito</h1>
+        <p>Faça seu pedido online e receba rapidinho. Tudo fresquinho, do nosso fogão para a sua mesa.</p>
+        <div class="actions">
+          <a class="btn" href="#cardapio">Ver cardápio</a>
+          <a class="btn btn--ghost" data-whats-link href="#" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+        </div>
+      </div>
+      <figure class="hero__media" aria-hidden="true">
+        <img
+          src="assets/img/hero.jpg"
+          alt=""
+          width="800"
+          height="550"
+          loading="eager"
+          fetchpriority="high"
+        >
+      </figure>
+    </div>
+  </section>
+
+  <!-- Cardápio -->
+  <section id="cardapio" class="section" aria-labelledby="sec-cardapio">
+    <div class="container">
+      <header class="section__head">
+        <h2 id="sec-cardapio">Nosso Cardápio</h2>
+        <p>Escolha seus favoritos e finalize pelo WhatsApp.</p>
+      </header>
+
+      <!-- Filtros -->
+      <div id="filters" class="filters" role="group" aria-label="Categorias do cardápio"></div>
+
+      <!-- Itens -->
+      <div id="grid-cardapio" class="grid" aria-live="polite"></div>
+
+      <!-- CTA final -->
+      <div class="center">
+        <a class="btn" data-whats-link href="#" target="_blank" rel="noopener">Finalizar pedido no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section section--alt" aria-labelledby="sec-sobre">
+    <div class="container about">
+      <div class="about__text">
+        <h2 id="sec-sobre">Sobre nós</h2>
+        <p>Preparamos tudo com carinho, usando ingredientes selecionados.</p>
+        <p>Nossa missão é oferecer sabor, praticidade e aquela sensação de “feito em casa”.</p>
+        <p>Venha nos conhecer e sinta o ambiente acolhedor.</p>
+        <div class="actions">
+          <a class="btn" data-whats-link href="#" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+          <a class="btn btn--ghost" href="#cardapio">Ver cardápio</a>
+        </div>
+      </div>
+      <figure aria-hidden="true">
+        <img
+          src="assets/img/ambiente.jpg"
+          alt=""
+          width="800"
+          height="550"
+          loading="lazy"
+        >
+      </figure>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section" aria-labelledby="sec-contato">
+    <div class="container contact">
+      <div>
+        <h2 id="sec-contato">Contato</h2>
+        <p><strong>Telefone:</strong> <span id="contato-telefone">—</span></p>
+        <p><strong>Endereço:</strong> <span id="contato-endereco">—</span></p>
+        <div class="actions">
+          <a class="btn" id="contato-whats" data-whats-link href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn--ghost" id="contato-email" href="#">Enviar e-mail</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> <span id="footer-nome">Seu Restaurante</span> — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Helpers JS pequenos que não dependem de app.js -->
+  <script>
+    // Ano do rodapé (fallback imediato)
+    (function(){ try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(e){} })();
+
+    // Logo fallback robusto (pega erro tardio e caso já tenha falhado)
+    (function(){
+      const img = document.querySelector('.logo img');
+      const fb  = document.querySelector('.logo .logo-fallback');
+      if(!img || !fb) return;
+      function showFallback(){ img.style.display='none'; fb.classList.add('is-visible'); }
+      img.addEventListener('error', showFallback);
+      if (img.complete && img.naturalWidth === 0) { showFallback(); }
+    })();
+
+    // Menu mobile acessível
+    (function () {
+      const btn = document.getElementById('menu-toggle');
+      const nav = document.getElementById('nav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) {
+          const first = nav.querySelector('a, button');
+          first && first.focus();
+        } else {
+          btn.focus();
+        }
+      });
+    })();
+  </script>
+
+  <!-- App principal -->
+  <script src="assets/js/app.js" defer></script>
+
+  <noscript>
+    <style>.actions{display:none!important}</style>
+    <div class="container" style="padding:16px">
+      Para melhor experiência, ative o JavaScript. O cardápio carrega automaticamente e os botões de WhatsApp são preenchidos via configuração.
+    </div>
+  </noscript>
+</body>
+</html>

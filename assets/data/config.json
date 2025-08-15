@@ -1,0 +1,26 @@
+{
+  "siteName": "Restaurante Modelo",
+  "logo": "assets/img/logo.png",
+  "hero": {
+    "title": "Sabores que encantam",
+    "subtitle": "Pratos preparados com ingredientes frescos e muito carinho."
+  },
+  "heroImage": "https://controlenamao.com.br/blog/wp-content/uploads/2025/02/Como-Montar-um-Restaurante-Prato-Feito-PF_-Guia-em-10-passos.webp",
+  "whatsapp": "5567999999999",
+  "phone": "(67) 99999-9999",
+  "email": "contato@restaurante.com",
+  "address": "Av. Exemplo, 123 — Centro, Cidade/UF",
+  "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.999!2d-54.620!3d-20.469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8!2sRestaurante!5e0!3m2!1spt-BR!2sBR!4v0000000000",
+  "about": {
+    "title": "Sobre Nós",
+    "paragraphs": [
+      "Somos apaixonados por gastronomia e acreditamos que comer bem é um prazer essencial.",
+      "Nossos pratos são preparados com ingredientes frescos, seguindo receitas exclusivas.",
+      "Mais do que refeições, oferecemos experiências que ficam na memória.",
+      "Seja bem-vindo(a) e aproveite cada sabor!"
+    ],
+    "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80",
+    "ctaPrimary": "Pedir no WhatsApp",
+    "ctaSecondary": "Ver Cardápio"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "Entradas": [
+    {
+      "nome": "Bruschetta Clássica",
+      "descricao": "Pão italiano com tomate, manjericão e azeite.",
+      "preco": 18.0,
+      "imagem": "https://i.ytimg.com/vi/Wv0eEcvNspA/maxresdefault.jpg"
+    },
+    {
+      "nome": "Tábua de Frios",
+      "descricao": "Queijos, embutidos e acompanhamentos.",
+      "preco": 35.0,
+      "imagem": "https://benditosalgado.com.br/wp-content/uploads/2020/05/Tabua-de-Frios-1.jpg"
+    }
+  ],
+  "PratosPrincipais": [
+    {
+      "nome": "Risoto de Cogumelos",
+      "descricao": "Arroz arbóreo com cogumelos frescos e parmesão.",
+      "preco": 48.0,
+      "imagem": "https://i.panelinha.com.br/i1/bk-6483-risoto-de-cogumelos-com-salsinha.webp"
+    },
+    {
+      "nome": "Picanha Grelhada",
+      "descricao": "Acompanha arroz, feijão tropeiro e vinagrete.",
+      "preco": 72.0,
+      "imagem": "https://www.minhareceita.com.br/app/uploads/2025/02/R0125_1953_Picanha_grelhada_com_ratatouille_de_frigideira-capa-1200x480.webp"
+    }
+  ],
+  "Sobremesas": [
+    {
+      "nome": "Cheesecake de Frutas Vermelhas",
+      "descricao": "Cobertura artesanal de frutas vermelhas.",
+      "preco": 22.0,
+      "imagem": "https://s2-receitas.glbimg.com/54KiQVGas8DCIiwYqclaakNc1O4=/0x0:1366x768/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2025/3/r/h8urvgQPO8vv1nWSPy3A/cheesecake-de-frutas-vermelhas.jpg"
+    },
+    {
+      "nome": "Petit Gâteau",
+      "descricao": "Bolo de chocolate com recheio cremoso e sorvete.",
+      "preco": 25.0,
+      "imagem": "https://blog.colombo.com.br/wp-content/uploads/2020/07/f35fdee2-f603-4b3e-8087-fd4e1ed96a88.jpg"
+    }
+  ],
+  "Bebidas": [
+    {
+      "nome": "Suco Natural",
+      "descricao": "Escolha entre laranja, limão, abacaxi ou melancia.",
+      "preco": 8.0,
+      "imagem": "https://www.assai.com.br/sites/default/files/blog/copos_com_sucos_de_frutas_-_suco_natural_-_assai_atacadista.jpg"
+    },
+    {
+      "nome": "Cerveja Artesanal",
+      "descricao": "Long neck 330ml — sabores variados.",
+      "preco": 15.0,
+      "imagem": "https://cervejariaantuerpia.com.br/wp-content/uploads/2020/09/como-surgiu-a-cerveja-artesanal.jpg"
+    },
+    {
+      "nome": "Refrigerante",
+      "descricao": "Copo 330ml — acompanha gelo.",
+      "preco": 15.0,
+      "imagem": "https://s2.glbimg.com/GUda5oj9xkd_yQNyn36mDn9XJmo=/620x455/e.glbimg.com/og/ed/f/original/2018/08/17/beber-refrigerante-todos-os-dias-esta-te-matando.jpg"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+/* =======================================================
+   Tema por cliente (PODE mudar por projeto)
+   - Troque as variáveis abaixo para personalizar cores
+   - Não altere o base.css
+   ======================================================= */
+
+:root{
+  /* Paleta da marca (Pro Burger) */
+  --brand: #ee6001;       /* principal (botões, destaques) */
+  --brand-700:#043344;    /* hover/escuro */
+  --gold: #FDF100;        /* detalhes opcionais */
+
+  /* Base */
+  --ink: #0f172a;         /* texto principal */
+  --muted:#64748b;        /* texto secundário */
+  --bg:#ffffff;           /* fundo primário */
+  --bg-alt:#faf8f3;       /* fundo alternativo (areia) */
+
+  /* Header/Menu (NOVO: altere aqui) */
+  --menu-bg: rgba(255,255,255,.92);    /* fundo do header e menu mobile */
+  --menu-ink: var(--ink);              /* cor dos links do menu */
+  --menu-hover-ink: var(--brand);      /* hover dos links */
+  --menu-border: #eaeaea;              /* borda inferior e do menu mobile */
+  --menu-shadow: 0 6px 24px rgba(15, 23, 42, .06); /* sombra do header */
+  --menu-link-weight: 600;             /* peso da fonte dos links */
+
+  /* Botão do topo (CTA no menu) */
+  --cta-bg: var(--brand);
+  --cta-ink: #ffffff;
+  --cta-hover-bg: var(--brand-700);
+  --cta-hover-ink: #ffffff;
+
+  /* UI */
+  --radius: 16px;
+  --shadow: 0 8px 28px rgba(15, 23, 42, .08);
+}
+
+/* ===== Ajustes de tema ===== */
+
+/* Header/Menu usando variáveis de tema */
+.header{
+  background: var(--menu-bg) !important;
+  border-bottom: 1px solid var(--menu-border) !important;
+  box-shadow: var(--menu-shadow);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+/* Links do menu */
+.nav a{
+  color: var(--menu-ink);
+  font-weight: var(--menu-link-weight);
+}
+.nav a:hover{ color: var(--menu-hover-ink); }
+
+/* Botão do topo (WhatsApp) dentro do menu */
+.nav .btn{
+  background: var(--cta-bg);
+  color: var(--cta-ink);
+}
+.nav .btn:hover{
+  background: var(--cta-hover-bg);
+  color: var(--cta-hover-ink);
+}
+
+/* Botão hambúrguer */
+.menu{
+  background: var(--bg);
+  border-color: var(--menu-border);
+}
+
+/* Menu mobile aberto */
+@media (max-width: 940px){
+  .nav{
+    background: var(--menu-bg);
+    border-color: var(--menu-border);
+  }
+}
+
+/* Realces gerais */
+.nav a:hover,
+.accent{ color: var(--brand); }
+
+/* Contraste melhor no hover do ghost */
+.btn--ghost:hover { border-color: var(--brand-700); }
+
+/* (Opcional) Toque dourado mais evidente no hero
+.hero{
+  background:
+    radial-gradient(1000px 400px at 20% 0%, rgba(253,241,0,.12), transparent),
+    linear-gradient(180deg, #fff, var(--bg-alt));
+}
+*/
