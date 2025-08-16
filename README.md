@@ -59,6 +59,4 @@ Edite apenas `assets/css/theme.css` (variáveis em `:root`).
 - Se o cliente **não** tiver WhatsApp, os botões ficam desativados (visual).
 - Para publicar: GitHub Pages, Vercel ou Netlify.
 
----
 
-**Pronto!** Clone, personalize `config.json` + `menu.json` e publique. 🚀
